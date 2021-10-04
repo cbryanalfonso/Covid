@@ -23,6 +23,11 @@ class App extends Component {
   render() {
     return (
       <NavigationContainer>
+        <StatusBar
+          //backgroundColor="#264d9b"
+          backgroundColor="#3498db"
+          barStyle="light-content"
+        />
         <Stack.Navigator>
           <Stack.Screen
             name='Inicio'
@@ -33,7 +38,7 @@ class App extends Component {
           <Stack.Screen
             name='Principal'
             component={Principal}
-            options={{ title: 'Interfaz Principal', }}
+            options={{ title: 'Interfaz Principal', headerShown: false }}
           >
           </Stack.Screen>
 

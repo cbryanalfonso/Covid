@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 //import { NavigationContainer }
 import {
     SafeAreaView,
@@ -17,13 +17,22 @@ import {
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native'
 
-
-
 class Equipo extends Component {
     render() {
         return (
             <View style={styles.container}>
-               <Text>Equipo</Text>
+                <View style={styles.subcontainer}>
+                    <Text style={styles.txtTitulo}>¿Quiénes somos?</Text>
+                </View>
+                <View style={styles.subcontainer}>
+                    <Text style={styles.txt}>
+                    Somos estudiantes del tecnológico de estudios superiores de Jocotitlán, en el que
+                    tomamos como base la
+                    {"\n"}
+                    {"\n"}
+                   
+                    </Text>
+                </View>
             </View>
         );
     }

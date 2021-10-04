@@ -62,6 +62,7 @@ class Principal extends Component {
                     })
                 } 
             >
+                
                 <Tab.Screen
                     name= "Info"
                     component={Informacion}
